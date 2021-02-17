@@ -1,8 +1,10 @@
 function unroll(squareArray) {
     let total = squareArray[0].length ** 2;
     const checker = () => {
-        if(result[result.length-1] === undefined){
-            result.pop()
+        let end = result.length-1
+        while(result[end] === undefined){
+            result.pop();
+            end--
         }
     }
     
